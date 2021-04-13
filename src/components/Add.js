@@ -32,15 +32,15 @@ export const Add = () => {
                             onChange={onChange}
                         />
                     </div>
-{results.length>0 && (
-    <ul className="results">
-        {results.map(movie => (
-            <li key={movie.id}>
-                <ResultCard movie={movie}/>
-            </li>
-        ))}
-    </ul>
-)}
+                    {results.length > 0 && (
+                        <ul className="results">
+                            {results.map(movie => (
+                                <li key={movie.id}>
+                                    <ResultCard movie={movie} />
+                                </li>
+                            ))}
+                        </ul>
+                    )}
 
 
                 </div>
